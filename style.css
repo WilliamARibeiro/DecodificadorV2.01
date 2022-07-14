@@ -280,9 +280,9 @@ footer p:hover {
 .header-container {
   display: flex;
   flex-direction: row-reverse;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   font-size: 1rem;
-  justify-content: space-around;
+  justify-content: space-evenly;
   marging-top: 5em;
 
 }
