@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #0a3871;
+  --primary-color: gray;
   --primary-text-color: #343a40;
   --secondary-text-color: #495057;
-  --color-light-blue: #eff1fa;
+  --color-light-blue: orange;
   --color-white: #fbfdff;
 
   /* font */
@@ -42,6 +42,13 @@ html {
   display: grid;
 }
 
+.logo {
+  max-width: 100px;
+  max-height: 100px;
+  border: solid 1px gray;
+  border-radius: 33.33%;
+}
+
 .field {
   width: 100%;
   display: flex;
@@ -60,8 +67,8 @@ textarea {
   resize: none;
   padding: 0.4rem;
   margin-bottom: 0.4rem;
-  box-shadow: 0 0 10px #1f252b3f;
-  border-radius: 10px;
+  box-shadow: 0 0 10px orange;
+  border-radius: 25px;
   font-size: var(--font-medium);
   color: var(--primary-color);
 }
@@ -136,7 +143,7 @@ textarea {
 
 .btn:hover {
   cursor: pointer;
-  box-shadow: 0 0 8px var(--primary-color);
+  box-shadow: 0 0 10px orange;
   transform: scale(1.02);
 }
 
@@ -163,7 +170,7 @@ textarea {
 .text-encrypt-descrypt-container {
   width: 98%;
   text-align: center;
-  box-shadow: 0 0 10px #1f252b3f;
+  box-shadow: 0 0 10px orange;
   border-radius: 20px;
   margin: 2.4rem 0;
   display: flex;
@@ -180,6 +187,14 @@ textarea {
   font-weight: 400;
   font-size: var(--font-normal);
   margin: 1.8rem;
+}
+
+.text-content {
+  color: gray;
+}
+
+.img-container img {
+  max-width: 200px;
 }
 
 #btn-copy {
@@ -205,6 +220,15 @@ footer p {
   font-size: var(--font-normal);
   color: var(--color-light-blue);
   margin: 1.8rem 0;
+  transition: all 0.25s;
+}
+
+footer p:hover {
+  color: whitesmoke;
+  display: inline-block;
+  transform: scale(1.1);
+  fill: var(--color-light-blue);
+  filter: drop-shadow(0 0 0.8rem #aab2d5);
 }
 
 .social-media a {
