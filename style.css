@@ -256,6 +256,12 @@ footer p:hover {
 }
 
 @media screen and (min-width: 768px) {
+  .logo {
+  max-width: 50px;
+  max-height: 50px;
+  border: solid 1px gray;
+  border-radius: 33.33%;
+}
   .btn-container {
     flex-wrap: nowrap;
   }
@@ -271,6 +277,12 @@ footer p:hover {
 
 @media screen and (min-width: 1440px) {
   .main-container {
+    .logo {
+  max-width: 50px;
+  max-height: 50px;
+  border: solid 1px gray;
+  border-radius: 33.33%;
+}
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 100px auto 70px;
   }
