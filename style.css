@@ -31,7 +31,17 @@ html {
 .header-container {
   height: 5rem;
   margin-left: 1.8rem;
-  margin-top: 1.8rem;
+  margin-top: 1rem;
+
+}
+
+.cabecalho  {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: -2rem;
+  color: gray;
+  text-shadow: 0 0 10px orange;
+  
 }
 
 /* content */
@@ -255,45 +265,64 @@ footer p:hover {
   display: none;
 }
 
-
 @media screen and (min-width: 0px) {
-  .logo {
-  max-width: 50px;
-  max-height: 50px;
-  border: solid 1px gray;
-  border-radius: 33.33%;
-}
   .btn-container {
     flex-wrap: nowrap;
   }
+
+  .logo {
+  max-width: 30px;
+  max-height: 30px;
+  border: solid 1px gray;
+  border-radius: 33.33%;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  font-size: 1rem;
+  justify-content: space-around;
+  marging-top: 5em;
+
+}
+
 
   footer {
     height: 60px;
     padding: 0 2.4rem;
     flex-direction: row;
-    flex-wrap: no-wrap;
     justify-content: space-between;
     align-items: center;
-    
   }
 }
 
 @media screen and (min-width: 768px) {
+  .btn-container {
+    flex-wrap: nowrap;
+  }
   .logo {
   max-width: 50px;
   max-height: 50px;
   border: solid 1px gray;
   border-radius: 33.33%;
 }
-  .btn-container {
-    flex-wrap: nowrap;
-  }
+
+.header-container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  font-size: 1rem;
+  justify-content: space-around;
+  marging-top: 5em;
+
+}
+
 
   footer {
     height: 60px;
     padding: 0 2.4rem;
     flex-direction: row;
-    flex-wrap: no-wrap;
     justify-content: space-between;
     align-items: center;
   }
@@ -304,16 +333,26 @@ footer p:hover {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 100px auto 70px;
   }
-  
-    .logo {
+
+  .header-container {
+    margin-left: -6rem;
+    padding-top: 1rem;
+  }
+
+  .logo {
   max-width: 100px;
   max-height: 100px;
   border: solid 1px gray;
   border-radius: 33.33%;
+ 
 }
+.header-container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  font-size: 1rem;
+  justify-content: space-around;
   
-  .header-container {
-    margin-left: 6rem;
   }
 
   .field {
