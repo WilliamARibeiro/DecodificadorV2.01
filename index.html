@@ -12,7 +12,7 @@
     />
 
     <!-- style -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,16 +21,17 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <title>Encriptador de Texto</title>
+    <title>Decodificador de Texto</title>
   </head>
-  <body>
+  <body class="body" ondblclick="home()">
     <main class="main-container">
       <!-- alerts -->
       <section class="alert"></section>
 
       <!-- header -->
       <header class="header-container">
-        <img class="logo" src="./icons/logoOrange.webp" alt="Logo" />
+        <h1 class="cabecalho">Decodificador de Texto</h1>
+        <img class="logo" src="./icons/logoOrange.webp" alt="Logo" onclick="home()"/>
       </header>
 
       <!-- content sections -->
@@ -99,7 +100,8 @@
         </div>
       </footer>
     </main>
-    <script src="./app.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>
   
   </body>
 </html>
+
