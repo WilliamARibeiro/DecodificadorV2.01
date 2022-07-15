@@ -57,6 +57,7 @@ html {
   max-height: 100px;
   border: solid 1px gray;
   border-radius: 33.33%;
+  box-shadow: 0 0 10px orange;
 }
 
 .field {
