@@ -124,7 +124,7 @@ textarea {
 
 .alert.active-correct {
   transform: translateX(0);
-  border-left: 10px solid #3cff7d;
+  border-left: 10px solid orange;
 }
 
 .alert.active-incorrect {
